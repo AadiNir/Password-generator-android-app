@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React, { useState } from 'react'
 import * as yup from 'yup'
 
@@ -45,11 +45,22 @@ const App = () => {
     return results;
 
   }
+  const reset = ()=>{
+    setpassword('');
+    setpasswordgenerated(false);
+    setlowercase(false);
+    setuppercase(false);
+    setsymbols(false);
+    setnumber(false)
+
+  }
   return (
     <View>
       <Text>App</Text>
     </View>
   )
 }
-
+const styles = StyleSheet.create({
+  
+})
 export default App
